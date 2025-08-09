@@ -1,0 +1,12 @@
+
+.App {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.b-gradient {
+  background: linear-gradient(to right, rgb(248, 250, 252), rgb(219, 234, 254));
+}

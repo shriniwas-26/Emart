@@ -1,0 +1,91 @@
+.activeTab{
+    background-color: var(--primary-color);
+}
+
+/* Navigation link styles */
+.nav-link {
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Ensure text is visible */
+.nav-link .MuiListItemText-primary {
+    color: inherit !important;
+    font-weight: 500;
+}
+
+.nav-link.active .MuiListItemText-primary {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Icon styling */
+.nav-link .MuiListItemIcon-root {
+    color: inherit;
+    min-width: 40px;
+}
+
+.nav-link.active .MuiListItemIcon-root {
+    color: white;
+}
+
+/* Drawer container */
+.drawer-container {
+    background-color: white;
+    height: 100%;
+    width: 300px;
+    border-right: 1px solid #e5e7eb;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 1024px) {
+    .drawer-container {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Ensure navigation links are always visible */
+.nav-link {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    transform: translateX(2px);
+}
+
+.nav-link.active {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Text visibility improvements */
+.nav-link .MuiListItemText-root {
+    color: inherit;
+}
+
+.nav-link.active .MuiListItemText-root {
+    color: white;
+}
+
+/* Icon improvements */
+.nav-link .MuiListItemIcon-root {
+    color: inherit;
+    min-width: 40px;
+    margin-right: 12px;
+}
+
+.nav-link.active .MuiListItemIcon-root {
+    color: white;
+}

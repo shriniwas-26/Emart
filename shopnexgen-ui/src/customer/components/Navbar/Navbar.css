@@ -1,0 +1,156 @@
+/* .logo{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+} */
+.category{
+    font-weight: 400;
+}
+
+
+.blur-bg {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+  }
+
+  /* MagicalNavbar.css */
+
+/* Logo floating animation */
+@keyframes logoFloat {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-2px) rotate(0.5deg); 
+  }
+  50% { 
+    transform: translateY(-1px) rotate(0deg); 
+  }
+  75% { 
+    transform: translateY(-3px) rotate(-0.5deg); 
+  }
+}
+
+/* Gradient color shifting animation */
+@keyframes gradientShift {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+/* Text glow animation */
+@keyframes textGlow {
+  from { 
+    filter: drop-shadow(0 0 5px rgba(102, 126, 234, 0.3)); 
+  }
+  to { 
+    filter: drop-shadow(0 0 15px rgba(102, 126, 234, 0.6)); 
+  }
+}
+
+/* Aura background shifting animation */
+@keyframes auraShift {
+  from { 
+    transform: scale(1) rotate(0deg); 
+    opacity: 0.1; 
+  }
+  to { 
+    transform: scale(1.1) rotate(1deg); 
+    opacity: 0.3; 
+  }
+}
+
+/* Sparkle particles animation */
+@keyframes sparkleAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1) translateY(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0) translateY(-30px);
+  }
+}
+
+/* Magical logo container */
+.magical-logo-container {
+  animation: logoFloat 4s ease-in-out infinite;
+}
+
+/* Logo text styling */
+.magical-logo-text {
+  background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease-in-out infinite, textGlow 2s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Magical aura effect */
+.magical-aura {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  filter: blur(10px);
+  animation: auraShift 2s ease-in-out infinite alternate;
+}
+
+/* Navbar background gradient */
+/* .magical-navbar {
+  background: linear-gradient(to right, rgb(248, 250, 252), rgb(219, 234, 254));
+} */
+
+/* Hover effects */
+.magical-logo-text:hover {
+  transform: scale(1.1);
+}
+
+
+/* Sparkle particles base class */
+.sparkle-particle {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  animation: sparkleAnimation 2s ease-out forwards;
+}
+
+/* Additional utility classes for different sparkle colors */
+.sparkle-red {
+  background: radial-gradient(circle, #ff6b6b 0%, transparent 70%);
+}
+
+.sparkle-cyan {
+  background: radial-gradient(circle, #4ecdc4 0%, transparent 70%);
+}
+
+.sparkle-blue {
+  background: radial-gradient(circle, #45b7d1 0%, transparent 70%);
+}
+
+.sparkle-green {
+  background: radial-gradient(circle, #96ceb4 0%, transparent 70%);
+}
+
+.sparkle-yellow {
+  background: radial-gradient(circle, #ffeaa7 0%, transparent 70%);
+}
+
+.sparkle-purple {
+  background: radial-gradient(circle, #dda0dd 0%, transparent 70%);
+}
+
+.sparkle-white {
+  background: radial-gradient(circle, #fff 0%, transparent 70%);
+}
+  
